@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Lista de Produtos</h2>
+        <ul>
+            <li *ngFor="let produto of produtos">
+                <div>
+                    <h3>{{produto.name}}</h3>
+                    <p>{{produto.description}}</p>
+                    <p>{{produto.price}}</p>
+                    <p>{{produto.tamanho}}</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

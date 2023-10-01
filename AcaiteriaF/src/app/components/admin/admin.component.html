@@ -1,1 +1,20 @@
-<p>admin works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+</head>
+<body>
+<div class="admin-container">
+    <h2>Administração</h2>
+    <div class="admin-options">
+        <button (click)="selectService('Produto')">Gerenciar Produto</button>
+        <button (click)="selectService('Acompanhamento')">Gerenciar Acompanhamento</button>
+        <button (click)="selectService('Recipiente')">Gerenciar Recipiente</button>
+        <button (click)="selectService('Tamanho')">Gerenciar Tamanho</button>
+    </div>
+
+</div>
+</body>
+</html>

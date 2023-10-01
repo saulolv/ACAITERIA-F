@@ -12,6 +12,8 @@ import { MenuListComponent } from './components/menu-list/menu-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { GerenciarProdutoComponent } from './components/gerenciar-produto/gerenciar-produto.component';
+import { AcompanhamentoModalComponent } from './components/acompanhamento-modal/acompanhamento-modal.component';
+import { CarrinhoModalComponent } from './components/carrinho-modal/carrinho-modal.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { GerenciarProdutoComponent } from './components/gerenciar-produto/gerenc
     AdminComponent,
     MenuListComponent,
     HomeComponent,
-    GerenciarProdutoComponent
+    GerenciarProdutoComponent,
+    AcompanhamentoModalComponent,
+    CarrinhoModalComponent
   ],
   imports: [
     BrowserModule,

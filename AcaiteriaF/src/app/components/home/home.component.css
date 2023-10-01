@@ -1,0 +1,62 @@
+/* Estilos para o container principal da página */
+.home-container {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Estilo para o carrinho de compras */
+.cart-button {
+    position: fixed;
+    top: 90%;
+    right: 5%;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Estilo para os cards de produtos */
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Estilo para o título dos cards */
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Estilo para o texto dos cards */
+.card-text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o container dos cards */
+.cards-container {
+    display: flex;
+    padding: 0;
+}

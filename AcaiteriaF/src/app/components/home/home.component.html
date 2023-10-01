@@ -1,1 +1,50 @@
-<p>home works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+<div class="home-container container-fluid">
+    <!-- Barra superior com o icone do carrinho -->
+    <button class="cart-button" (click)="abrirCarrinho()">
+        <i class="fa fa-shopping-cart"></i>
+        <!-- Exiba o numero de itens no carrinho aqui -->
+
+    </button>
+
+    <!-- Lista de produtos -->
+    <div class="container">
+        <h2>Copos</h2>
+        <div class="row">
+            <div class="col-md-4" *ngFor="let copo of copos" (click)="abrirModalAcompanhamentos(copo)">
+                <div class="card">
+                    <img class="card-img-top" src="{{copo.image}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{copo.nome}}</h5>
+                        <p class="card-text">R$ {{copo.preco}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lista de Tigelas (teste) -->
+    <div class="container">
+        <h2>Tigelas</h2>
+        <div class="row">
+          <div class="col-md-4" *ngFor="let tigela of tigelas" (click)="abrirModalAcompanhamentos(tigela)">
+            <div class="card">
+              <img class="card-img-top" [src]="tigela.image" alt="{{ tigela.nome }}">
+              <div class="card-body">
+                <h5 class="card-title">{{ tigela.nome }}</h5>
+                <p class="card-text">Preço: R$ {{ tigela.preco }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>  
+</body>
+</html>
